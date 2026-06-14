@@ -55,6 +55,7 @@ function Home() {
   // Cargar personajes cuando cambia la página
   useEffect(() => {
     fetchCharacters(currentPage, searchTerm);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPage]);
 
   // Manejar búsqueda con debounce
